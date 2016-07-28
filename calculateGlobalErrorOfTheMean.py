@@ -1,3 +1,7 @@
+# This script will calculate the global error of the mean for two clustering strategies:
+# species- and kmeans determined clusters-based
+# An R script housed in the same repository is used to generate the Kmeans clusters and the newPlotDetails
+# file that is read in in this script
 import math
 
 def readDefinedFileToList(filename):
