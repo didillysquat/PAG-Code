@@ -9,7 +9,7 @@ def readDefinedFileToList(filename):
         tempList = [line.rstrip() for line in reader]
     return tempList
 
-def calculateGlobalErrorsOfTheMean():
+def GlobalErrorsOfTheMean():
     # Read in a file that has the information on which cluster each of the sequences fell into according
     # to the kmeans clustering. The newPlotDetails file is produced by the MDS and kmeans .r file
     rootDir = r'yourRootDir'
@@ -126,3 +126,5 @@ def calculateGlobalErrorsOfTheMean():
     # Print them
     print('The global standard error of the mean for the species clustering approach is: ' + str(globalSEForSpeciesClustering))
     print('The global standard error of the mean for the species clustering approach is: ' + str(globalSEForKMeansClustering))
+
+GlobalErrorsOfTheMean()
